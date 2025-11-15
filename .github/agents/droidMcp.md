@@ -1,13 +1,12 @@
 ---
-name: droidMcp
-description: 'Exposes Factory AI Droid agent's capabilities through a standardized MCP interface. It wraps the `droid exec` command-line tool, allowing MCP-compatible applications (Github Copilot, other AI agents) to programmatically request Droid to come up with specs, analyze code, implement features, fix bugs, and solve development tasks.'
-tools: ['*']
+name: droid-mcp
+description: Exposes Factory AI Droid agent's capabilities through a standardized MCP interface. It wraps the `droid exec` command-line tool, allowing MCP-compatible applications (Github Copilot, other AI agents) to programmatically request Droid to come up with specs, analyze code, implement features, fix bugs, and solve development tasks.
 mcp-servers:
-  droidMcp:
+  droid-mcp:
     type: 'local'
+    tools: ['*']
     command: 'npx'
     args: ['-y', 'github:factory-davidgu/droid-mcp']
-    tools: ['*']
     env:
       FACTORY_API_KEY: COPILOT_MCP_FACTORY_API_KEY
 ---
