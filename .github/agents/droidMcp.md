@@ -9,7 +9,7 @@ mcp-servers:
     args: ['-y', 'github:factory-davidgu/droid-mcp']
     tools: ['*']
     env:
-      FACTORY_API_KEY: COPILOT_MCP_ENV_VAR_VALUE
+      FACTORY_API_KEY: COPILOT_MCP_FACTORY_API_KEY
 ---
 
 # Droid MCP Documentation
